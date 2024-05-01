@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "bootstrap": "^5.3.3",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.76.0"
+  },
+  "scripts": {
+    "scss": "sass --watch ./styles/styles.scss:./styles/styles.css",
+    "autoprefix": "postcss --use autoprefixer -b 'last 2 versions' ./styles.scss:./styles.css"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/index.html" class="nav-link active" aria-current="page">Search</a></li>
+            <li class="nav-item"><a href="/pages/image-search.html" class="nav-link">Image search</a></li>
+            <li class="nav-item"><a href="/pages/extended-search.html" class="nav-link">Advanced Search</a></li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <form id="search_form" method="GET">
+                <input type="text" id="search_input" name="q">
+                <button type="button" onclick="submitForm('search')">Search</button>
+                <button type="button" onclick="submitForm('lucky')">I'm Feeling Lucky</button>
+            </form>      
+        </div>    
+    </main>
+    <footer class="py-3 my-4">
+        <p class="text-center text-body-secondary">© 2024 SearchLab, Inc</p>
+    </footer>
+</body>
+<script>
+function submitForm(type) {
+    var form = document.getElementById('search_form');
+    var searchInput = document.getElementById('search_input');
+    
+    if (type === 'lucky') {
+        var hiddenInput1 = document.createElement('input');
+        hiddenInput1.type = 'hidden';
+        hiddenInput1.name = 'btnI';
+        hiddenInput1.value = '1';
+        form.action = 'https://www.google.com/search';
+        form.appendChild(hiddenInput1);
+    } else if (type === 'search') {
+        form.action = 'https://www.google.com/search';
+        searchInput.name = 'q';
+    }
+    
+    form.submit();
+}
+</script>
+</html>
