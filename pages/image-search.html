@@ -16,17 +16,22 @@
             <li class="nav-item"><a href="/pages/extended-search.html" class="nav-link">Advanced Search</a></li>
         </ul>
     </header>
-    <main>
-        <div>
-            <form action="https://www.google.com/search" method="GET">
+    <main class="d-flex flex-column justify-content-center align-items-center">
+        <div class="mb-2">
+            <h1>SearchLab</h1>
+        </div>
+        <div class="form-container">
+            <form id="image_search_form" action="https://www.google.com/search" class="flex-column d-flex align-items-center justify-content-center" method="GET">
                 <input type="hidden" name="tbm" value="isch">
-                <input type="text" name="q">
-                <input type="submit" value="Google Image Search">
+                <input type="text" name="q" class="mx-3 form-control">
+                <div>
+                    <input type="submit" class="btn btn-primary mt-2" value="Google Image Search">
+                </div>
             </form>
         </div>
     </main>
     <footer class="py-3 my-4">
-        <p class="text-center text-body-secondary">© 2024 SearchLab, Inc</p>
+        <p class="text-center footer-copyright">© 2024 SearchLab, Inc</p>
     </footer>
 </body>
 

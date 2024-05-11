@@ -11844,5 +11844,49 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-image: url(/images/steve-johnson-IzlHm4cLdW4-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+main {
+  height: calc(100vh - 75px);
+}
+
+footer {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lucky-btn {
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.footer-copyright {
+  color: #FFFFFF;
+}
+
+.form-container {
+  width: 50%;
+}
+
+.extended-search-form {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advanced-search-btn {
+  width: 100%;
+}
 
 /*# sourceMappingURL=styles.css.map */

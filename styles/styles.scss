@@ -7,3 +7,49 @@ $light: #FFFFFF;
 $body-bg: #F9F9F9;
 $bg-body-tertiary: #F9F9F9;
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+
+body {
+    background-image: url(/images/steve-johnson-IzlHm4cLdW4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    height: 75px;
+    background-color: rgba(256, 256, 256, 0.7);
+}
+
+main{
+    height: calc(100vh - 75px);
+}
+
+footer{
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.lucky-btn{
+    color: $light;
+    white-space: nowrap;
+}
+
+.footer-copyright{
+    color: $light;
+}
+
+.form-container{
+    width: 50%;
+}
+
+.extended-search-form{
+    background-color: rgba(256, 256, 256, 0.3);
+}
+
+.advanced-search-btn{
+    width: 100%;
+}

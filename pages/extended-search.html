@@ -16,27 +16,31 @@
             <li class="nav-item"><a href="/pages/extended-search.html" class="nav-link active" aria-current="page">Advanced Search</a></li>
         </ul>
     </header>
-    <main>
-        <div>
-            <form action="https://www.google.com/search" method="GET">                
+    <main class="d-flex flex-column justify-content-center align-items-center">
+        <div class="mb-2">
+            <h1>SearchLab</h1>
+        </div>
+        <div class="form-container">
+            <form action="https://www.google.com/search" class="rounded p-3 extended-search-form d-flex flex-column align-items-start justify-content-center" method="GET">                
                 <label for="all_words">Search for all pages containing these words:</label>
-                <input type="text" id="all_words" name="as_q" value="">
+                <input type="text" id="all_words" name="as_q" class="form-control" value="">
             
-                <label for="exact_phrase">Search for pages with this particular word/phrase:</label>
-                <input type="text" id="exact_phrase" name="as_epq" value="">
+                <label for="exact_phrase" class="mt-3">Search for pages with this particular word/phrase:</label>
+                <input type="text" id="exact_phrase" name="as_epq" class="form-control" value="">
             
-                <label for="any_words">Search for pages with any of the following words:</label>
-                <input type="text" id="any_words" name="as_oq" value="">
+                <label for="any_words" class="mt-3">Search for pages with any of the following words:</label>
+                <input type="text" id="any_words" name="as_oq" class="form-control" value="">
             
-                <label for="none_of_these">Search for pages with none of these words</label>
-                <input type="text" id="none_of_these" name="as_eq" value="">
-            
-                <input type="submit" value="Search">
+                <label for="none_of_these" class="mt-3">Search for pages with none of these words</label>
+                <input type="text" id="none_of_these" name="as_eq" class="form-control " value="">
+                <div class="d-flex justify-content-center advanced-search-btn">
+                    <input type="submit" value="Advanced Search" class="btn btn-primary mt-3">
+                </div>
             </form>
         </div>
     </main>
     <footer class="py-3 my-4">
-        <p class="text-center text-body-secondary">© 2024 SearchLab, Inc</p>
+        <p class="text-center footer-copyright">© 2024 SearchLab, Inc</p>
     </footer>
 </body>
 
